@@ -1,0 +1,15 @@
+this is a temporary guide for setting up a project
+i'll remove this when i choose to integrate the instructions into README.md
+
+--mongo--
+edit docker-compose.yml to add container name
+edit docker/mongo-init.js to change api user info
+docker-compose up
+
+--changing generic info--
+change components/layout.js title and description
+replace public/favicon.ico
+change package name in package.json
+
+--npm--
+npm install
