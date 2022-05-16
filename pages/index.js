@@ -1,5 +1,5 @@
+import GameWindow from "../components/gameWindow";
+
 export default function Home() {
-  return (
-    <p>page content populating main tag in layout</p>
-  )
+  return <GameWindow />
 }
