@@ -1,17 +1,11 @@
-import BunnySprite from "./sprites/animals/bunny"
-import BunnyBabySprite from "./sprites/animals/bunnyBaby"
-import {useState} from 'react'
+import AnimalSprite from "./sprites/animal";
 
 export default function GameWindow(){
-
-  const [animalAnimations, setAnimalAnimations] = useState(0);
-
   return <div 
-    className="bg-blue-100 h-80 w-80 grid grid-cols-10 grid-rows-10"
-    onClick={_ => {setAnimalAnimations(animalAnimations++ % 5)}}  
+    className="bg-blue-100 h-80 w-80 grid grid-cols-10 grid-rows-10 overflow-hidden"
   >
-    <BunnySprite animated={true} animation={animalAnimations}/>
-    <BunnyBabySprite animated={true} animation={animalAnimations}/>
-    
+    <AnimalSprite animal='pig' animated={true} />
+    <div>
+    </div>
   </div>
 }
